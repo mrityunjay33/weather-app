@@ -15,7 +15,7 @@ function App() {
   const callApi = async () => {
     setLoading(true);
     try {
-      const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${input}`);
+      const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${input}`);
       const data = await response.json();
       console.log(data);
       let weatherData = [data.current.temp_c, data.current.humidity, data.current.condition.text, data.current.wind_kph];
