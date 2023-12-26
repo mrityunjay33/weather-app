@@ -12,7 +12,7 @@ input[type="text"]{
   margin: 50px 5px;
 }
 
-.card{
+.weather-card{
   display: flex;
   flex-direction: column;
   width: 150px;
@@ -21,7 +21,7 @@ input[type="text"]{
   border-radius: 6px;
   margin: 10px;
 }
-.card-container{
+.weather-cards{
   display: flex;
   justify-content: center;
 }

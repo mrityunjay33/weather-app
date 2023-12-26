@@ -33,25 +33,25 @@ function App() {
     <div>
         <input type="text" value={input} onChange={handleInput} placeholder='Enter city name'/>
         <button onClick={callApi}>Search</button>
-        {weatherData.length >0 && <div className='card-container'>
-          <div className='card'>
+        {weatherData.length >0 && <div className='weather-cards'>
+          <div className='weather-card'>
             <h5>Temperature</h5>
             <div>{weatherData[0]} C </div>
           </div>
-          <div className='card'>
+          <div className='weather-card'>
             <h5>Humidity</h5>
             <div>{weatherData[1]}%</div>
           </div>
-          <div className='card'>
+          <div className='weather-card'>
             <h5>Condition</h5>
             <div>{weatherData[2]} </div>
           </div>
-          <div className='card'>
+          <div className='weather-card'>
             <h5>Wind Speed</h5>
             <div>{weatherData[3]} kph</div>
           </div>
         </div>}
-        {loading && <div>Loading data...</div>}
+        {loading && <p>Loading data...</p>}
     </div>
   );
 }
